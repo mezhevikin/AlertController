@@ -24,7 +24,9 @@ alert.addOkAction()
 present(alert, animated: true)
 ```
 
-![alert](https://github.com/mezhevikin/AlertControllerExample/blob/master/Screens/alert.jpg?raw=true)
+<p align="center">
+    <img src="https://github.com/mezhevikin/AlertControllerExample/blob/master/Screens/alert.jpg?raw=true" width="250">
+</p>
 
 ### Sheet
 
@@ -51,7 +53,9 @@ sheet.addCancelAction()
 present(sheet, sourceView: cell)
 ```
 
-![alert](https://github.com/mezhevikin/AlertControllerExample/blob/master/Screens/sheet.jpg?raw=true)
+<p align="center">
+    <img src="https://github.com/mezhevikin/AlertControllerExample/blob/master/Screens/sheet.jpg?raw=true" width="250">
+</p>
 
 ### Choice
 
@@ -70,7 +74,10 @@ for (i, animal) in animals.enumerated() {
 sheet.addCancelAction()
 present(sheet, sourceView: cell)
 ```
-![choice](https://github.com/mezhevikin/AlertControllerExample/blob/master/Screens/choice.jpg?raw=true)
+
+<p align="center">
+    <img src="https://github.com/mezhevikin/AlertControllerExample/blob/master/Screens/choice.jpg?raw=true" width="250">
+</p>
 
 ### Swift Package Manager
 
