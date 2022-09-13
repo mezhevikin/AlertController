@@ -79,6 +79,42 @@ present(sheet, sourceView: cell)
     <img src="https://github.com/mezhevikin/AlertControllerExample/blob/master/Screens/choice.jpg?raw=true" width="250">
 </p>
 
+### TextField
+
+```swift
+let alert = UIAlertController.alert("🔓 Login")
+alert.addTextField {
+    $0.placeholder = "✉️ Mail"
+}
+alert.addTextField {
+    $0.placeholder = "🔑 Password"
+    $0.isSecureTextEntry = true
+}
+alert.addAction(title: "OK") {
+    if let mail = alert.textFields?[0].text,
+        let password = alert.textFields?[0].text
+    {
+        print("✉️ \(mail), 🔑 \(password)")    
+    }
+}
+present(alert)
+```
+
+<p align="center">
+    <img src="https://github.com/mezhevikin/AlertControllerExample/blob/master/Screens/fields.jpg?raw=true" width="250">
+</p>
+
+### iPad
+
+```swift
+// Alert
+present(alert)
+// Sheet from cell
+present(sheet, sourceView: cell) 
+// Sheet from BarButton
+present(sheet, barButtonItem: navigationItem.leftBarButtonItem) 
+```
+
 ### Swift Package Manager
 
 ```
