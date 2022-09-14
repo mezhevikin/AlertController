@@ -104,14 +104,14 @@ present(alert)
     <img src="https://github.com/mezhevikin/AlertControllerExample/blob/master/Screens/fields.jpg?raw=true" width="250">
 </p>
 
-### iPad
+### Present
 
 ```swift
 // Alert
 present(alert)
-// Sheet from cell
+// Sheet from cell with iPad support
 present(sheet, sourceView: cell) 
-// Sheet from BarButton
+// Sheet from BarButton with iPad support
 present(sheet, barButtonItem: navigationItem.leftBarButtonItem) 
 ```
 
