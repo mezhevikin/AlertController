@@ -1,9 +1,7 @@
 // Mezhevikin Alexey: https://github.com/mezhevikin/AlertController
-
 import UIKit
 
 public extension UIAlertController {
-    
     static func alert(
         _ title: String? = nil,
         message: String? = nil
@@ -98,7 +96,6 @@ public extension UIAlertController {
 }
 
 public extension UIAlertAction {
-    
     func setImage(_ image: UIImage) {
         setValue(image, forKey: "image")
     }
