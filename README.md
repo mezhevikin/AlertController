@@ -92,7 +92,7 @@ alert.addTextField {
 }
 alert.addAction(title: "OK") {
     if let mail = alert.textFields?[0].text,
-        let password = alert.textFields?[0].text
+       let password = alert.textFields?[1].text
     {
         print("✉️ \(mail), 🔑 \(password)")    
     }
