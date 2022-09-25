@@ -120,3 +120,9 @@ present(sheet, barButtonItem: navigationItem.leftBarButtonItem)
 ```
 https://github.com/mezhevikin/AlertController.git
 ```
+
+### CocoaPods
+
+```
+pod 'AlertController', :git => 'https://github.com/mezhevikin/AlertController.git'
+```

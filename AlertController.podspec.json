@@ -1,0 +1,25 @@
+{
+  "name": "AlertController",
+  "version": "0.0.3",
+  "summary": "💬 A tiny extension for UIAlertController that makes working with it very simple",
+  "homepage": "https://github.com/mezhevikin/AlertController",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Mezhevikin Alexey": "mezhevikin@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/mezhevikin/AlertController.git",
+    "tag": "0.0.3"
+  },
+  "platforms": {
+    "ios": "13.0"
+  },
+  "source_files": "Sources/**/*",
+  "pushed_with_swift_version": "5.5",
+  "frameworks": [
+    "UIKit"
+  ]
+}
