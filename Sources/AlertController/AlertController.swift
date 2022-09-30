@@ -52,7 +52,7 @@ public extension UIAlertController {
             action.setColor(color)
         }
         action.isEnabled = enabled
-        action.setCheked(checked)
+        action.setChecked(checked)
         action.setLeftAligment(leftAligment)
         addAction(action)
         return action
@@ -114,8 +114,8 @@ public extension UIAlertAction {
         setValue(color, forKey: "imageTintColor")
     }
     
-    func setCheked(_ cheked: Bool) {
-        setValue(cheked, forKey: "checked")
+    func setChecked(_ checked: Bool) {
+        setValue(checked, forKey: "checked")
     }
     
     func setLeftAligment(_ leftAligment: Bool) {
