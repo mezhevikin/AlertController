@@ -33,7 +33,8 @@ public extension UIAlertController {
         style: UIAlertAction.Style = .default,
         icon: String? = nil,
         systemIcon: String? = nil,
-        color: UIColor? = nil,
+        titleColor: UIColor? = nil,
+        imageTintColor: UIColor? = nil,
         enabled: Bool = true,
         checked: Bool = false,
         leftAligment: Bool = false,
@@ -48,8 +49,11 @@ public extension UIAlertController {
         if let systemIcon = systemIcon {
             action.setIcon(systemIcon, isSystem: true)
         }
-        if let color = color {
-            action.setColor(color)
+        if let color = titleColor {
+            action.setTitleColor(color)
+        }
+        if let color = imageTintColor {
+            action.setImageTintColor(color)
         }
         action.isEnabled = enabled
         action.setChecked(checked)
@@ -109,8 +113,11 @@ public extension UIAlertAction {
         }
     }
     
-    func setColor(_ color: UIColor) {
+    func setTitleColor(_ color: UIColor) {
         setValue(color, forKey: "titleTextColor")
+    }
+    
+    func setImageTintColor(_ color: UIColor) {
         setValue(color, forKey: "imageTintColor")
     }
     
